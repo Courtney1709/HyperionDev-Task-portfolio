@@ -5,7 +5,7 @@ This is the final task of the bootcamp.
 
 This is a Capstone Project and is about a basic form of Natural Language Processing (NLP) - Sentiment Analysis. For this project/task I was required to use a recurrent neural network in Keras to classify book reviews as either positive or negative
 
-The purpose of this project is to teach our neural network to recognise the distinction between negative and positive reviews and be able to classify each review correctly.
+The purpose of this project is to teach the neural network to recognise the distinction between negative and positive reviews and be able to classify each review correctly.
 This task made use of real world data.
 
 This was broken down in the following setps:
@@ -45,32 +45,27 @@ Dense(2, activation='softmax')
 
 ## Training and Tuning the model
 
+This is where the model is compiled and trained. The model is compiled by specifying the loss function and optimizer used while training, as well as
+all evaluation metrics measured. Over here the optimizer is set to ‘adam’ and the loss function to ‘binary_crossentropy’.
+
+Once the compilation is complete, next is the training process. There are two important training parameters that were specified , namely batch size and the number of
+training epochs. Therefore, together with our model architecture, these parameters determine the total training time.
+
+
+# The network parameters set: 
+The set number of epochs to train for were 5 and batch size 10.
+Tuned the output_dim hyper-parameter of the embedding layer to 10, 25, 50 and 100. Then, reported on the performance metrics for each value.
+Selected the output_dim which gave the best performance on the test set and plotted a graph of both the accuracy and loss of the model while it was training.
+These graphs were used to determine the point at which the model starts to overfit or if it has not yet converged. 
+Lastly, reported on the performance metrics of the final model
+
+## Made predictions
+Finally, a small selection of samples was provided, no other reviews were added to this sample.
+The model was then used for to predict. For this, I needed to translate the sentences into the relevant integers and pad where needed.
+This allowed me to put it into the model and see whether it predicts if we will like or dislike the book reviews.
+The task was completed.
 
 
 
-what the purpose of the project is,
-○ what data is being analysed (add links to the datasets if appropriate),
-○ how the data is being analysed (add links to .ipynb files if
-appropriate) and
-○ what the main findings are (add links to report documents where
-appropriate).
 
 
-
-The project name.
-● A clear, short, and to the point description of your project. Describe the
-importance of your project, and what it does.
-● A table of Contents to allow other people to quickly navigate especially long
-or detailed READMEs.
-● An installation section which tells other users how to install your project
-locally.
-● A usage section that instructs others on how to use your project after
-they’ve installed it. Include screenshots of your project in action.
-● A section for credits which highlights and links to the authors of your project
-if the project has been created by more than one person.
-
-
-What is this repo or project? (You can reuse the repo description you used earlier because this section doesn’t have to be long.)
-How does it work?
-Who will use this repo or project?
-What is the goal of this project?
