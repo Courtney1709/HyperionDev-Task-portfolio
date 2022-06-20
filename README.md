@@ -60,7 +60,7 @@ These graphs were used to determine the point at which the model starts to overf
 Lastly, reported on the performance metrics of the final model
 
 # Made predictions
-Finally, a small selection of samples was provided, no other reviews were added to this sample.
+Finally, a small selection of samples were provided, no other reviews were added to this sample.
 The model was then used for to predict. For this, I needed to translate the sentences into the relevant integers and pad where needed.
 This allowed me to put it into the model and see whether it predicts if we will like or dislike the book reviews.
 The task was completed.
